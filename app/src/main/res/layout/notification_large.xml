@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:padding="20dp"
+        android:text="@string/app_name"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/remaining_time"
+        android:text="00:00"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/counter_time"-->
+<!--        android:hint="Minute"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_below="@id/remaining_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/reset_timer"
+            android:textColor="@color/black"
+            android:text="Reset Timer"
+            android:textSize="15sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:padding="15dp"
+            android:id="@+id/kill_app"
+            android:text="Kill App"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
